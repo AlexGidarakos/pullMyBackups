@@ -1,0 +1,25 @@
+# example.conf.README
+# This file is part of the pullMyBackups project.
+# Project URL: https://github.com/AlexGidarakos/pullMyBackups
+#
+# Copyright 2016, Alexandros Gidarakos.
+# Author: Alexandros Gidarakos <algida79@gmail.com>
+# Author URL: http://linkedin.com/in/alexandrosgidarakos
+#
+# SPDX-License-Identifier: GPL-2.0
+
+# Example configuration file
+# For each remote backup set you want to pull, create a file with .conf
+# extension inside the same conf.d directory where this file resides.
+
+# Required - This is used to identify the remote backup set
+# PMB_NAME=example.com
+
+# Required -  Location of the remote backup set, similar to rsync syntax
+# PMB_SOURCE=root@server.example.com:/path/to/backups
+
+# Optional - Remote SSH port - Defaults to 22 if not set
+# PMB_SOURCE_PORT=48794
+
+# Required - Path to a local basedir where remote backups will be pulled
+# PMB_TARGET=/var/myPulledBackups/example
